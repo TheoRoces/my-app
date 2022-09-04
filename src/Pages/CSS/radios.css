@@ -1,0 +1,326 @@
+.radios {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.liveRadio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.imgLive {
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imgLive img {
+    width: 100%;
+}
+
+.nameOfLive {
+    background-color: white;
+    font-family: SoraBold;
+    padding: 5px 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 7px;
+    animation: liveClignotant 3s ease-in-out infinite;
+}
+
+@keyframes liveClignotant {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: rgb(163, 3, 3);
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.controlsLive {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.controlsLive .btnPlayPauseLive {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlsLive .btnPlayPauseLive img {
+    width: 50px;
+    padding: 10px 0px;
+}
+
+.metasMusicLive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.metasMusicLive span {
+    color: black;
+    font-family: SoraBold;
+}
+
+.taxonomiesLive {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.typeOfMusic {
+    background-color: #1E1E1E;
+    color: #787878;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.typeOfMusic:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    color: white;
+}
+
+
+/* MUSIQUES RÉCENTES */
+
+.recentMusicsSection {
+    margin-bottom: 50px;
+}
+
+.stickyRecentMusicSection {
+    position: sticky;
+    top: 70px;
+    background: #0C0C0C;
+    padding-top: 20px;
+}
+
+.recentMusicsSection .selectorLiveRecentMusics {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.recentMusicsSection .selectorLiveRecentMusics .selectorLive {
+    background: #1E1E1E;
+    border-radius: 50px;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SoraBold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.headTabRecentMusics {
+    background: #1e1e1e;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headTabRecentMusics .tabLeftRecentMusics span {
+    margin-right: 30px;
+}
+
+.headTabRecentMusics img {
+    width: 20px;
+}
+
+.zoneRecentMusics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.zoneRecentMusicsLiveTwo {
+    display: none;
+}
+
+.zoneRecentMusics .recentMusic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #1E1E1E;
+    padding: 10px 0px;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: -1;
+    padding-left: 2px;
+}
+
+.nbRecentMusic {
+    position: absolute;
+}
+
+.blockImgRecentMusic {
+    padding-left: 36px;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic img {
+    max-width: 65px;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic .metasRecentMusic {
+    display: flex;
+    flex-direction: column;
+}
+
+.zoneRecentMusics .recentMusic .infosRecentMusic .metasRecentMusic .nameMusicRecentMusic {
+    font-size: 14px;
+    font-family: SoraThin;
+}
+
+.zoneRecentMusics .recentMusic .hourRecentMusic {
+    font-size: 14px;
+}
+
+/* ARTISTES FRÉQUENTS */
+
+.recurentArtists {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.recurentArtists .imgRecurentArtist {
+    width: calc(20vw - 36px);
+    height: calc(20vw - 36px);
+    max-width: 204px;
+    max-height: 204px;
+    margin-bottom: 20px;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.recurentArtists .recurentArtist img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.recurentArtists .imgRecurentArtist:hover img {
+    width: 120%;
+    height: 120%;
+}
+
+.recurentArtists .nameRecurentArtist {
+    font-family: SoraBold;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .recurentArtists .imgRecurentArtist {
+        width: calc(25vw - 38px);
+        height: calc(25vw - 38px);
+        max-width: initial;
+        max-height: initial;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .radios {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .liveRadio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgLive {
+        width: 100%;
+        height: 60vw;
+    }
+
+    .headTabRecentMusics {
+        padding: 10px 15px;
+    }
+
+    .zoneRecentMusics {
+        padding: 30px 15px;
+    }    
+
+    .recurentArtists .imgRecurentArtist {
+        width: calc(33.33333vw - 40px);
+        height: calc(33.33333vw - 40px);
+    }
+}
+
+@media (max-width: 550px) {
+    .recurentArtists .imgRecurentArtist {
+        width: calc(50vw - 45px);
+        height: calc(50vw - 45px);
+    }
+
+    .recurentArtists .nameRecurentArtist {
+        font-size: 1px;
+    }
+}

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: SoraThin;
+  src: url(./Fonts/Sora-Thin.ttf);
+}
+
+@font-face {
+  font-family: SoraExtraLight;
+  src: url(./Fonts/Sora-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: SoraLight;
+  src: url(./Fonts/Sora-Light.ttf);
+}
+
+@font-face {
+  font-family: SoraRegular;
+  src: url(./Fonts/Sora-Regular.ttf);
+}
+
+@font-face {
+  font-family: SoraMedium;
+  src: url(./Fonts/Sora-Medium.ttf);
+}
+
+@font-face {
+  font-family: SoraSemiBold;
+  src: url(./Fonts/Sora-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: SoraBold;
+  src: url(./Fonts/Sora-Bold.ttf);
+}
+
+@font-face {
+  font-family: SoraExtraBold;
+  src: url(./Fonts/Sora-ExtraBold.ttf);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: SoraRegular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0c0c0c;
+}
+
+li {
+  list-style: none;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, span {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+h1, h2 {
+  font-size: 32px;
+  font-family: SoraExtraBold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: SoraBold;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.restrict {
+  width: 100%;
+  max-width: 1400px;
+  padding: 130px 30px 70px;
+}
+
+.separatorTitle {
+  height: 2px;
+  width: 100px;
+  background-color: white;
+  margin: 10px 0px 50px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .restrict {
+    padding: 150px 15px 70px;
+  }
+}
